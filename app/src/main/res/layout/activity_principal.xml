@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.taller_empresa_xyz.Principal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Empresa XYZ"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:id="@+id/textView5"
+            tools:layout_editor_absoluteY="25dp"
+            tools:layout_editor_absoluteX="3dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="24sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="Material"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            tools:layout_editor_absoluteY="81dp"
+            tools:layout_editor_absoluteX="0dp"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/cmbMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="231dp" />
+
+        <TextView
+            android:text="Dije"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            tools:layout_editor_absoluteY="139dp"
+            tools:layout_editor_absoluteX="3dp"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+
+        <Spinner
+            android:id="@+id/cmbDije"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="166dp" />
+
+        <TextView
+            android:text="Tipo"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            tools:layout_editor_absoluteY="201dp"
+            tools:layout_editor_absoluteX="0dp"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/cmbTipo"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+        <TextView
+            android:text="Tipo de Moneda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            tools:layout_editor_absoluteY="262dp"
+            tools:layout_editor_absoluteX="0dp"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.06"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/cmbMoneda"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="287dp" />
+
+        <EditText
+            android:id="@+id/txtCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/cantidadManillas"
+            android:inputType="number"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:textStyle="normal|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnValidar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Calcular"
+                android:text="Validar" />
+
+            <Button
+                android:id="@+id/btnBorrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Borrar"
+                android:text="Borrar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_weight="0.35">
+
+            <TextView
+                android:id="@+id/lblResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.22"
+                android:text="Valor a Pagar"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblRes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.34" />
+
+            <TextView
+                android:id="@+id/lblRes1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.22"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <![CDATA[
+
+    TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="300dp"
+        android:layout_marginEnd="300dp"
+        android:id="@+id/textView" />
+]]>
+</RelativeLayout>
